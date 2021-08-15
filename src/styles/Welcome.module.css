@@ -1,0 +1,65 @@
+@keyframes change{
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #473C8B;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0F0727;
+    width: 60vw;
+    height: 80vh;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    animation-name: change;
+    animation-duration: 1s;
+}
+
+.text h2{
+    margin-bottom: 5vh;
+}
+
+.text h4{
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+}
+
+.word{
+    display: inline;
+    color: #6C63FF;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    .text{
+        height: 100vh;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .subTitle{
+        font-size: 15px;
+    }
+    .list{
+        font-size: 15px;
+    }
+}
+
